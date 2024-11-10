@@ -1,7 +1,7 @@
 ﻿using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
 using MauiDemo;
-using MyCompanyName.MyProjectName.Blazor.Menus;
+using MauiDemoUi.Menus;
 using Volo.Abp.AspNetCore.Components.Web.BasicTheme;
 using Volo.Abp.AspNetCore.Components.Web.Theming.Routing;
 using Volo.Abp.Autofac;

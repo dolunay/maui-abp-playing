@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.MyProjectName.Blazor.Menus;
+﻿namespace MauiDemoUi.Menus;
 
 public class MyProjectNameMenus
 {

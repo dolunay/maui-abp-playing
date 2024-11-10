@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29020.237
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemo.Domain", "src\MauiDemo.Domain\MauiDemo.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
 EndProject
@@ -34,6 +34,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemo.DbMigrator", "src\MauiDemo.DbMigrator\MauiDemo.DbMigrator.csproj", "{AA94D832-1CCC-4715-95A9-A483F23A1A5D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemo.HttpApi.Host", "src\MauiDemo.HttpApi.Host\MauiDemo.HttpApi.Host.csproj", "{748584B1-BA69-4F6A-81AA-F4BDE6BCE29D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.AspNetCore.Components.Web.BasicTheme", "..\ui\MauiDemoUi\modules\Volo.BasicTheme\src\Volo.Abp.AspNetCore.Components.Web.BasicTheme\Volo.Abp.AspNetCore.Components.Web.BasicTheme.csproj", "{AEA950B4-2054-4F5C-A54F-DFF92C731203}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemoUi", "..\ui\MauiDemoUi\MauiDemoUi\MauiDemoUi.csproj", "{F8BE0DE3-1D4B-4E12-AD78-85031EE07C66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +101,16 @@ Global
 		{748584B1-BA69-4F6A-81AA-F4BDE6BCE29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{748584B1-BA69-4F6A-81AA-F4BDE6BCE29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{748584B1-BA69-4F6A-81AA-F4BDE6BCE29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA950B4-2054-4F5C-A54F-DFF92C731203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA950B4-2054-4F5C-A54F-DFF92C731203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA950B4-2054-4F5C-A54F-DFF92C731203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA950B4-2054-4F5C-A54F-DFF92C731203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8BE0DE3-1D4B-4E12-AD78-85031EE07C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BE0DE3-1D4B-4E12-AD78-85031EE07C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BE0DE3-1D4B-4E12-AD78-85031EE07C66}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F8BE0DE3-1D4B-4E12-AD78-85031EE07C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BE0DE3-1D4B-4E12-AD78-85031EE07C66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8BE0DE3-1D4B-4E12-AD78-85031EE07C66}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

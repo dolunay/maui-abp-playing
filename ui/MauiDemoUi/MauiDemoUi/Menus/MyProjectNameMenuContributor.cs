@@ -7,7 +7,7 @@ using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.Users;
 
-namespace MyCompanyName.MyProjectName.Blazor.Menus;
+namespace MauiDemoUi.Menus;
 
 public class MyProjectNameMenuContributor : IMenuContributor
 {

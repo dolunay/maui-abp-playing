@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Logging;
 using System.Reflection;
 using Volo.Abp;
 using Volo.Abp.Autofac;
@@ -14,16 +15,23 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder.ConfigureContainer(new AbpAutofacServiceProviderFactory(new Autofac.ContainerBuilder()));
 		builder
-			.RegisterBlazorMauiWebView()
+			//.RegisterBlazorMauiWebView()
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 			});
 
-		ConfigureConfiguration(builder);
+        builder.Services.AddMauiBlazorWebView();
 
-		builder.Services.AddApplication<MauiDemoUiModule>(options =>
+#if DEBUG
+        builder.Services.AddBlazorWebViewDeveloperTools();
+        builder.Logging.AddDebug();
+#endif
+
+        ConfigureConfiguration(builder);
+
+        builder.Services.AddApplication<MauiDemoUiModule>(options =>
         {
 			options.Services.ReplaceConfiguration(builder.Configuration);
 		});
